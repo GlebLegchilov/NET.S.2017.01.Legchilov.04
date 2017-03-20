@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Task4Test")]
 namespace Task4
 {
 
@@ -36,7 +33,7 @@ namespace Task4
         /// <param name="power">Root's power</param>
         /// <param name="e">Accuracy</param>
         /// <returns>Number's root</returns>
-        public static double FindMaster(double x, int power, double e)
+        internal static double FindMaster(double x, int power, double e)
         {
             double x1 = x/power;
             double x2 = (1 / (double)power) * ((power - 1) * x1 + x / Math.Pow(x1, power - 1));

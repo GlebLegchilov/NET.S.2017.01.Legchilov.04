@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
+
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Task3Test")]
 namespace Task3
 {
     /// <summary>
@@ -31,7 +30,7 @@ namespace Task3
         /// </summary>
         /// <param name="strOne">Old number</param>
         /// <returns>New number</returns>
-        public static int NextBiggerNumberMaster(int number)
+        internal static int NextBiggerNumberMaster(int number)
         {
             var newNumber = number.ToString().OrderByDescending(x => x);
             string tempstr = string.Empty;
