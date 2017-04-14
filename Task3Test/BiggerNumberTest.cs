@@ -18,7 +18,7 @@ namespace Task3Test
         [TestCase(2007, ExpectedResult = 7200)]
         public int NextBiggerNumberMaster_PositiveTest(int number)
         {
-            return NextBiggerNumberMaster(number);
+            return NextBiggerNumber(number);
         }
 
     }

@@ -20,7 +20,7 @@ namespace Task4
         public static double Find(double x, int power, double e = 0.0001)
         {
             if (power < 0)
-                throw new ArgumentException();
+                throw new ArgumentException(nameof(power));
             return FindMaster(x, power, e);
         }
         #endregion

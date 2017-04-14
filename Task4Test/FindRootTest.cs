@@ -17,9 +17,10 @@ namespace Task4Test
 
         [TestCase(144, 2, 0.0001, ExpectedResult = 12)]
         [TestCase(2.25, 2, 0.1, ExpectedResult = 1.50125)]
+        [TestCase(double.MaxValue, Int16.MaxValue, 0.001, ExpectedResult = 32.765010813801666d)]
         public double FindMaster_PositivTest(double x, int power, double e)
         {
-            return FindMaster(x, power, e);
+            return Find(x, power, e);
         } 
 
 
